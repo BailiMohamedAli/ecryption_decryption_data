@@ -30,5 +30,10 @@ app.get('/newdata', (req, res) => {
     nav.local= 'addData';
     res.render('pages/adddata', {nav : nav});
 })
+//new data
+app.post('/data/add', (req, res) =>{
+    console.log(req.body);
+    res.redirect('/newdata');
+})
 //listning to server
 app.listen(PORT, () => console.log(`server runnig on port ${PORT}:\nhttp://localhost:${PORT}`));
