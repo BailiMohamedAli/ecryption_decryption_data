@@ -1,6 +1,7 @@
 #custom
 keys/id_rsa_priv.pem
 keys/id_rsa_pub.pem
+test.js
 # Logs
 logs
 *.log

@@ -1,0 +1,23 @@
+<div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
+  <a onClick="newpath()" class="w3-bar-item w3-button"
+    ><b>E</b>ncryption <span>|Node.js Crypto|</span>
+  </a>
+  <!-- Float links to the right. Hide them on small screens -->
+  <div class="w3-right">
+    <!-- home -->
+    <% if (nav.local === 'home') { %>
+    <a href="/newdata" class="w3-bar-item w3-button">New data</a>
+    <a href="#" class="w3-bar-item w3-button">Manage data</a>
+    <% } %>
+    <!-- New data -->
+    <% if (nav.local === 'addData') { %>
+    <a href="/" class="w3-bar-item w3-button">Home</a>
+    <a href="#" class="w3-bar-item w3-button">Manage data</a>
+    <% } %>
+  </div>
+</div>
+<script>
+  function newpath() {
+    window.open("https://nodejs.org/api/crypto.html");
+  }
+</script>

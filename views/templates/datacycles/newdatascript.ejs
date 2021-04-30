@@ -1,0 +1,15 @@
+<script>
+    document
+      .getElementById("submit_register")
+      .addEventListener("click", register);
+    function register(event) {
+      var password = document.getElementById("password").value;
+      var password_conf = document.getElementById("password_conf").value;
+      if (password !== password_conf) {
+        event.preventDefault();
+        alert("password check failed");
+        document.getElementById("password").value = "";
+        document.getElementById("password_conf").value = "";
+      }
+    }
+  </script>

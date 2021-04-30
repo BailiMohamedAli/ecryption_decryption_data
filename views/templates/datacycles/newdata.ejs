@@ -1,0 +1,54 @@
+<div class="w3-sand padd_top_long" style="width: 100%; height: 100vh">
+    <div class="w3-content w3-white form_length_50 w3-animate-bottom">
+      <div class="w3-container w3-teal w3-animate-bottom">
+        <h2>New Data entry</h2>
+      </div>
+      <form
+        class="w3-container form_margin w3-animate-bottom"
+        action="/"
+      >
+        <label class="w3-text-teal form_margin"><b>Website Name</b></label>
+        <input
+          class="w3-input w3-border w3-light-grey form_margin"
+          type="text"
+          name="web_name"
+          placeholder="Website Name"
+        />
+        <label class="w3-text-teal form_margin"><b>Website URL</b></label>
+        <input
+          class="w3-input w3-border w3-light-grey form_margin"
+          type="text"
+          name="web_url"
+          placeholder="Website URL"
+        />
+        <label class="w3-text-teal form_margin"><b>User Email</b></label>
+        <input
+          class="w3-input w3-border w3-light-grey form_margin"
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Email used to subcsribe to the web site"
+        />
+        <label class="w3-text-teal form_margin"><b>Password</b></label>
+        <input
+          class="w3-input w3-border w3-light-grey form_margin"
+          type="Password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <label class="w3-text-teal form_margin"
+          ><b>Password confirmation</b></label
+        >
+        <input
+          class="w3-input w3-border w3-light-grey form_margin"
+          type="Password"
+          name="password_conf"
+          id="password_conf"
+          placeholder="Password"
+        />
+        <input class="w3-btn w3-teal w3-margin" type="submit" value="Submit" id="submit_register"/>
+      </form>
+    </div>
+  </div>
+  <%- include('./newdatascript'); -%>
