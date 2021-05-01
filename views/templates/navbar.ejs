@@ -7,13 +7,18 @@
     <!-- home -->
     <% if (nav.local === 'home') { %>
     <a href="/newdata" class="w3-bar-item w3-button">New data</a>
-    <a href="#" class="w3-bar-item w3-button">Manage data</a>
+    <a href="/datafeed" class="w3-bar-item w3-button">Manage data</a>
     <% } %>
     <!-- New data -->
     <% if (nav.local === 'addData') { %>
     <a href="/" class="w3-bar-item w3-button">Home</a>
-    <a href="#" class="w3-bar-item w3-button">Manage data</a>
+    <a href="/datafeed" class="w3-bar-item w3-button">Manage data</a>
     <% } %>
+    <!-- data Feed -->
+    <% if (nav.local === 'dataFeed') { %>
+      <a href="/" class="w3-bar-item w3-button">Home</a>
+      <a href="/newdata" class="w3-bar-item w3-button">New data</a>
+      <% } %>
   </div>
 </div>
 <script>

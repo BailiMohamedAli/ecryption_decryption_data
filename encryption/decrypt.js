@@ -1,7 +1,8 @@
 const crypto = require('crypto');
 
 function decryptWithPrivateKey(privateKey, encryptedMessage){
-    return crypto.privateDecrypt(privateKey, encryptedMessage);
+    const message = Buffer.from(encryptedMessage, 'utf-8');
+    return crypto.privateDecrypt(privateKey, message);
 }
 
 module.exports.decryptWithPrivateKey = decryptWithPrivateKey;

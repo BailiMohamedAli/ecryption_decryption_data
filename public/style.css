@@ -4,6 +4,15 @@
 .form_margin {
   margin: 1rem 0;
 }
+.padd_top_mid{
+  padding-top: 4rem;
+}
 .padd_top_long {
   padding-top: 8rem;
+}
+.pointer{
+  cursor: pointer;
+}
+.no_list_bullet{
+  list-style: none;
 }
