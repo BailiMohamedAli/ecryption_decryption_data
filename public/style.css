@@ -4,15 +4,27 @@
 .form_margin {
   margin: 1rem 0;
 }
-.padd_top_mid{
+.padd_top_mid {
   padding-top: 4rem;
 }
 .padd_top_long {
   padding-top: 8rem;
 }
-.pointer{
+.pointer {
   cursor: pointer;
 }
-.no_list_bullet{
+.no_list_bullet {
   list-style: none;
+}
+
+.datafeed_data_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero_container {
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
 }

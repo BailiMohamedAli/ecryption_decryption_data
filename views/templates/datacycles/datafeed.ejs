@@ -1,9 +1,9 @@
-<div class="w3-sand" style="width: 100%; height: 100vh">
+<div class="w3-sand hero_container">
   <div class="w3-center">
     <h1 class="w3-xxlarge w3-text-white w3-wide w3-padding-48">
       <% if (nav.local === 'dataFeed') { %>
       <p
-        class="w3-button w3-round-xlarge w3-padding-large w3-animate-bottom"
+        class="w3-button w3-round-xlarge w3-padding-large"
         onClick="showDataFeed()"
       >
         <span class="w3-padding w3-black w3-opacity-min"><b>D</b></span>
@@ -12,18 +12,19 @@
       <% } %>
     </h1>
   </div>
-  <div class="w3-display-middle" style="width: 32%">
-    <ul>
+  <div>
+    <ul class="datafeed_data_center">
       <% nav.data.forEach(function(data){ %>
         <div class="w3-panel w3-hover-light-grey pointer no_list_bullet w3-padding w3-round-xlarge">
+        <a href=<%= data.web_url %> style="text-decoration:none">
           <li>Website Name: <%= data.web_title %></li>
           <li>Website Url: <%= data.web_url %></li>
           <li>subscribed Email: <%= data.email %></li>
           <li>Password: <%= data.password %></li>
+        </a>
         </div>
         <hr>
       <% }); %>
     </ul>
   </div>
 </div>
-<%- include('./datafeedscript') -%>
